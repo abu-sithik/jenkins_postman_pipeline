@@ -1,0 +1,48 @@
+{
+    "collections": [
+        {
+            "name": "Authentication_API",
+            "url": "https://api.postman.com/collections/YOUR_COLLECTION_ID?apikey=${POSTMAN_API_KEY}",
+            "options": {
+                "timeout": 10000,
+                "delay": 1000,
+                "retries": 2
+            }
+        },
+        {
+            "name": "User_Management",
+            "url": "https://api.postman.com/collections/YOUR_COLLECTION_ID?apikey=${POSTMAN_API_KEY}",
+            "options": {
+                "timeout": 15000,
+                "delay": 500,
+                "retries": 1
+            }
+        },
+        {
+            "name": "Product_API",
+            "url": "https://api.postman.com/collections/YOUR_COLLECTION_ID?apikey=${POSTMAN_API_KEY}",
+            "options": {
+                "timeout": 20000,
+                "delay": 2000,
+                "retries": 3
+            }
+        }
+    ],
+    "environments": {
+        "QA": {
+            "id": "YOUR_QA_ENV_ID",
+            "timeout": 30000,
+            "retries": 2
+        },
+        "Staging": {
+            "id": "YOUR_STAGING_ENV_ID",
+            "timeout": 45000,
+            "retries": 1
+        },
+        "Production": {
+            "id": "YOUR_PROD_ENV_ID",
+            "timeout": 60000,
+            "retries": 0
+        }
+    }
+}
